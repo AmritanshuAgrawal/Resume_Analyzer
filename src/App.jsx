@@ -64,7 +64,7 @@ function App() {
 
     try {
       const response = await axios.post(
-        "http://localhost:4000/upload",
+        "https://resumeanalyzer-jnll.onrender.com/upload",
         formData,
         {
           headers: {
@@ -109,7 +109,7 @@ function App() {
   const handleDownloadPdf = async () => {
     try {
       const response = await axios.post(
-        "http://localhost:4000/download-analysis",
+        "https://resumeanalyzer-jnll.onrender.com/download-analysis",
         { analysis_result: analysisResult },
         {
           responseType: "blob",
